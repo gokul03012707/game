@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.container {
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-box {
+  background: #334155;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#scrambledWord {
+  font-size: 32px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.chat {
+  background: #334155;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#messages {
+  height: 200px;
+  overflow-y: auto;
+  background: #0f172a;
+  padding: 10px;
+}

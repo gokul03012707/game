@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2 Player Word Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Word Battle</h1>
+
+  <div id="status">
+    Waiting for players...
+  </div>
+
+  <div class="game-box">
+    <h2 id="scrambledWord">---</h2>
+
+    <input
+      type="text"
+      id="guessInput"
+      placeholder="Guess the word"
+    >
+
+    <button onclick="submitGuess()">
+      Submit
+    </button>
+  </div>
+
+  <div class="chat">
+
+    <h3>Live Chat</h3>
+
+    <div id="messages"></div>
+
+    <input
+      id="chatInput"
+      placeholder="Type message..."
+    >
+
+    <button onclick="sendMessage()">
+      Send
+    </button>
+
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
